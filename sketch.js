@@ -39,6 +39,7 @@ function draw() {
   
   edges= createEdgeSprites();
   boy.collide(edges[3]);
+  boy.collide(edges[2]);
   boy.collide(leftBoundary);
   boy.collide(rightBoundary);
   
