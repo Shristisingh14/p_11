@@ -12,27 +12,23 @@ function setup(){
   createCanvas(400,400);
   
 // Moving background
-path=createSprite(200,200);
-path.addImage(pathImg);
-path.velocityY = 4;
-path.scale=1.2;
+  path=createSprite(200,200);
+  path.addImage(pathImg);
+  path.velocityY = 4;
+  path.scale=1.2;
 
-//creating boy running
-boy = createSprite(180,340,30,30);
-boy.scale=0.08;
-boy.addAnimation("JakeRunning",boyImg);
+  //creating boy running
+  boy = createSprite(180,340,30,30);
+  boy.scale=0.08;
+  boy.addAnimation("JakeRunning",boyImg);
   
 
-leftBoundary=createSprite(0,0,100,800);
-
-// leftBoundary.invisible = false;
-// leftBoundary.visible = true;
-// leftBoundary.invisible = true;
-leftBoundary.visible = false;
+  leftBoundary=createSprite(10,0,100,800);
+  leftBoundary.visible = false;
 
 
-rightBoundary=createSprite(410,0,100,800);
-rightBoundary.visible = false;
+  rightBoundary=createSprite(410,0,100,800);
+  rightBoundary.visible = false;
 }
 
 function draw() {
